@@ -1,0 +1,247 @@
+nav {
+  height: auto; /*Junto a overflow: hidden; aplicará a nuestro elemento nav el mismo alto que el más alto de sus elementos hijos */ 
+  margin: 0 auto; /* Centro el contenedor */
+  overflow: hidden;
+  text-align: left;
+  width: 960px; /* Defino el ancho de mi página */
+}
+ul.menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background: #4faa3f;
+
+  color: white;
+}
+
+li {
+  display:inline-block;
+  margin-left: 100px;
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+#body-content {
+  width: 960px;
+  text-align: justify;
+}
+
+#t1 {
+  color:#fff !important;
+  border-color:#000 !important;
+  background:#ff4b53 !important;
+}
+
+table {
+  border: 1px #e2e2e2;
+  background: white;
+  margin: auto;
+}
+
+td {
+  font-size: 18px;
+  line-height: 24px !important;
+  padding: 20px !important;
+  text-align: left;
+}
+
+.redes-sociales {
+  font-size: 20px;
+}
+
+.post-footer-info {
+  background-color:#5e5f5f;
+  text-align: center;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.grid-item {
+  text-align: justify;
+  font-family: "Lora", sans-serif;
+  font-size: 14px;
+  color:#242424;
+}
+
+#Empresa {
+  max-width: 100%;
+  height: auto;
+}
+
+.grid-item p {
+  padding: 30px;
+}
+
+.grid-item3 {
+  width: 186%;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  font-size: 20px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.grid-item2 {
+  text-align: justify;
+  font-family: "Lora", sans-serif;
+  font-size: 14px;
+  color:#242424;
+  padding-top: 40px;
+}
+
+.grid-container-receta {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+.grid-item-receta {
+  text-align: justify;
+  font-family: "Lora", sans-serif;
+  font-size: 18px;
+  color:#4faa3f;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.grid-container-responsive {
+  display: none;
+}
+
+.grid-container-receta-responsive {
+  display: none;
+}
+
+.grid-container2-responsive {
+  display: none;
+}
+
+@media (max-width: 975px) {
+
+  #body-content {
+    width: 600px;
+    text-align: justify;
+  }
+
+  nav {
+    height: auto;
+    margin: 0 auto;
+    overflow: hidden;
+    text-align: left;
+    width: 600px;
+  }
+
+  nav li {
+    width: 199px;
+  }
+
+  nav a {
+    margin-right: 110px;
+  }
+
+  .grid-container {
+    display: none;
+  }
+
+  .grid-container-responsive {
+    display: block;
+    display: grid;
+    grid-template-columns: auto;
+  }
+
+  .grid-item-responsive {
+    text-align: justify;
+    font-family: "Lora", sans-serif;
+    font-size: 14px;
+    color:#242424;
+  }
+
+  #Empresa {
+    display:block;
+    margin:auto;
+    width: 500px;
+    height: 500px;
+  }
+
+  .grid-container-receta {
+    display: none;
+  }
+
+  .grid-container-receta-responsive {
+    display: block;
+    text-align: center;
+  }
+
+  .grid-item-receta-responsive {
+    font-family: "Lora", sans-serif;
+    font-size: 14px;
+    color:#4faa3f;
+    margin-top: 30px;
+  }
+
+.grid-container2-responsive {
+  display: block;
+  display: grid;
+  grid-template-columns: auto;
+  text-align: center;
+  }
+
+.grid-item2-responsive {
+    font-family: "Lora", sans-serif;
+    font-size: 18px;
+    color:#000;
+    margin-top: 30px;
+  }
+
+}
+
+@media (max-width: 620px) {
+
+  #body-content {
+    width: 350px;
+    text-align: justify;
+  }
+
+  table {
+    width: 350px;
+  }
+
+    nav {
+    height: auto;
+    margin: 0 auto;
+    overflow: hidden;
+    text-align: left;
+    width: 400px;
+  }
+
+  nav a {
+    margin-right: 0px;
+  }
+
+    #Empresa {
+    height: 300px;
+  }
+
+  .grid-container2-responsive {
+    display: block;
+  }
+
+  iframe {
+    width: 350!important;
+  }
+
+  #name, #email, #mesaage {
+    width: 350px;
+  }
+
+}
